@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+<hr>
+<table>
+        <thead>
+            <tr>
+                <th>Matrícula</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="animal : ${animais}">
+                <td th:text="${animais.nome}"></td>
+                <td th:text="${animais.especie}"></td>
+            </tr>
+        </tbody>
+</table>
+</body>
+</html>
